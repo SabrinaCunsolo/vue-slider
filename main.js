@@ -26,6 +26,17 @@ var app = new Vue(
                     this.caroselloImg = this.immagini.length - 1;
                 }
             }
+        },
+
+        // created va messa fuori da methods!
+        created: function() {
+            setInterval(() => {
+                this.clickRight()
+            }, 3000)
         }
-    }
+    },
+
+
+
+
 );
