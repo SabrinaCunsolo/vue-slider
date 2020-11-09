@@ -30,7 +30,7 @@
     object-fit: cover;
 }
 
-.right, .left {
+.left, .right {
     background-color: pink;
     width: 50px;
     height: 100%;
@@ -41,7 +41,7 @@
 
 }
 
-.right i, .left i {
+.left i, .right i {
     cursor: pointer;
     font-size: 40px;
 }

@@ -13,7 +13,11 @@ var app = new Vue(
             ]
         },
         methods: {
+            // per scorrere immagini devo attivare click
+            clickRight() {
+                this.caroselloImg += 1;
 
+                },
         }
     }
 );
