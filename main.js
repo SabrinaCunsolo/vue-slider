@@ -2,6 +2,7 @@ var app = new Vue(
     {
         el: '#root',
         data: {
+            caroselloImg: 0,
             // creo array di img
             immagini: [
                 'https://desenio.it/bilder/artiklar/zoom/8386_2.jpg?imgwidth=435&qt=',
