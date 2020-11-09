@@ -15,6 +15,11 @@
                 </div>
                 <div class="slider">
                     <img :src="immagini[caroselloImg]" alt="">
+                    <div class="circle">
+                        <i v-for="(immagine, carosello) in immagini"
+                        class="fa-circle" 
+                        v-bind:class="carosello == caroselloImg ? 'fas' : 'far' " ></i>
+                    </div>
                 </div>
                 <div class="right">
                     <i @click="clickRight()" class="fas fa-angle-right"></i>

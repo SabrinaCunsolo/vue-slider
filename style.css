@@ -10,14 +10,14 @@
 }
 
 .container {
-    background-color: coral;
+    /* background-color: coral; */
     width: 500;
     height: 700px;
     margin: auto;
 }
 
 .slider {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: calc(100% - 100px);
     height: 100%;
     position: relative;
@@ -31,17 +31,29 @@
 }
 
 .left, .right {
-    background-color: pink;
+    /* background-color: pink; */
     width: 50px;
     height: 100%;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .left i, .right i {
     cursor: pointer;
     font-size: 40px;
+    color: #b54e8d;
+}
+
+.circle {
+    position: absolute;
+    justify-content: center;
+    padding-top: 20px;
+    left: 40%;
+}
+
+.circle i {
+    margin: 0 3px;
+    color: #C00337;
 }
