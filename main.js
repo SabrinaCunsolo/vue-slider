@@ -15,9 +15,18 @@ var app = new Vue(
         methods: {
             // per scorrere immagini devo attivare click
             clickRight() {
-                this.caroselloImg += 1;
+                this.caroselloImg ++;
+                if (this.caroselloImg == this.immagini.length) {
+                    this.caroselloImg = 0;
+                }
+            },
+            clickLeft() {
+                this.caroselloImg --;
+                if (this.caroselloImg < 0) {
+                    this.caroselloImg = this.immagini.length - 1;
+                }
 
-                },
+            }
         }
     }
 );
