@@ -25,7 +25,8 @@ var app = new Vue(
                 if (this.caroselloImg < 0) {
                     this.caroselloImg = this.immagini.length - 1;
                 }
-            }
+            },
+
         },
 
         // created va messa fuori da methods!

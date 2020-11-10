@@ -17,7 +17,8 @@
                     <img :src="immagini[caroselloImg]" alt="">
                     <div class="circle">
                         <i v-for="(immagine, carosello) in immagini"
-                        class="fa-circle" 
+                        @click="caroselloImg = carosello"
+                        class="fa-circle"
                         v-bind:class="carosello == caroselloImg ? 'fas' : 'far' " ></i>
                     </div>
                 </div>
